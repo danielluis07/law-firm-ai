@@ -92,8 +92,8 @@ export function TriageSection() {
                     Etapa 1 de 3
                   </p>
                   <p className="mt-2 text-sm leading-7 text-foreground/88">
-                    "Seu vínculo foi encerrado recentemente ou os pagamentos
-                    esperados não foram concluídos?"
+                    &ldquo;Seu vínculo foi encerrado recentemente ou os
+                    pagamentos esperados não foram concluídos?&rdquo;
                   </p>
                 </div>
 
