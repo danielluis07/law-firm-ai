@@ -10,9 +10,9 @@ export function Hero() {
       aria-labelledby="hero-title"
       className="px-5 py-6 sm:px-8 sm:py-8 lg:px-10 lg:py-10">
       <div className="mx-auto max-w-7xl">
-        <div className="overflow-hidden rounded-[1.25rem] border border-border/80 bg-card/70 shadow-[0_30px_90px_-56px_oklch(0.22_0.09_240_/_0.42)]">
+        <div className="overflow-hidden rounded-[1.25rem] border border-border/80 bg-card/70 shadow-[0_30px_90px_-56px_oklch(0.22_0.09_240/0.42)]">
           <div className="grid items-stretch lg:grid-cols-[minmax(0,1.08fr)_minmax(25rem,0.92fr)]">
-            <div className="relative min-h-[22rem] border-b border-border/70 bg-secondary/20 sm:min-h-[30rem] lg:min-h-[42rem] lg:border-b-0">
+            <div className="relative min-h-88 border-b border-border/70 bg-secondary/20 sm:min-h-120 lg:min-h-168 lg:border-b-0">
               <Image
                 src={heroImage}
                 alt="Retrato profissional da consultora da Tavares e Lima Consultoria Trabalhista"
