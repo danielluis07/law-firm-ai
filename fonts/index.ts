@@ -1,13 +1,12 @@
-import { Fraunces, Inter, Source_Sans_3 } from "next/font/google";
+import { Lora, Inter } from "next/font/google";
 
-export const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
-export const publicDisplay = Fraunces({
+export const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-public-display",
+  variable: "--font-sans",
 });
 
-export const publicBody = Source_Sans_3({
+export const publicDisplay = Lora({
   subsets: ["latin"],
-  variable: "--font-public-body",
+  variable: "--font-public-display",
+  weight: ["600", "700"],
 });
