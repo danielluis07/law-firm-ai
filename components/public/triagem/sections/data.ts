@@ -1,3 +1,5 @@
+import type { CaseDraft, LeadClassification } from "@/schemas";
+
 export const microcopyItems = [
   "Leva apenas alguns minutos",
   "Linguagem simples e objetiva",
@@ -29,10 +31,26 @@ export const credibilityCards = [
 ] as const;
 
 export const progressSteps = [
-  "Situação",
-  "Relação de emprego",
-  "Detalhes",
-  "Contato",
+  {
+    id: "situation",
+    label: "Situação",
+    description: "Entender qual problema trabalhista motivou o contato.",
+  },
+  {
+    id: "employment",
+    label: "Relação de emprego",
+    description: "Confirmar vínculo, registro e contexto atual do trabalho.",
+  },
+  {
+    id: "details",
+    label: "Detalhes",
+    description: "Organizar datas, pagamentos, valores e provas disponíveis.",
+  },
+  {
+    id: "contact",
+    label: "Contato",
+    description: "Registrar nome e WhatsApp para continuidade do atendimento.",
+  },
 ] as const;
 
 export const quickReplies = [
@@ -61,12 +79,26 @@ export const commonMatters = [
   "Assédio no ambiente de trabalho",
 ] as const;
 
-export const summaryItems = [
-  { label: "Problema relatado", value: "Horas extras" },
-  { label: "Situação do vínculo", value: "Empregado registrado" },
-  { label: "Contexto atual", value: "Ex-empregado" },
-  {
-    label: "Indícios informados",
-    value: "Mensagens e comprovantes de pagamento",
-  },
-] as const;
+export const issueTypeLabels = {
+  unfair_dismissal: "Dispensa e verbas rescisórias",
+  unpaid_severance: "Verbas rescisórias não pagas",
+  overtime: "Horas extras não pagas",
+  undeclared_employment: "Trabalho sem registro",
+  harassment: "Assédio no ambiente de trabalho",
+  fgts: "FGTS e depósitos irregulares",
+  other: "Outra situação trabalhista",
+} satisfies Record<NonNullable<CaseDraft["issueType"]>, string>;
+
+export const caseStatusLabels = {
+  collecting: "Coletando informações",
+  ready_for_review: "Pronto para revisão humana",
+  out_of_scope: "Fora do escopo trabalhista",
+  incomplete: "Ainda faltam informações",
+} satisfies Record<NonNullable<CaseDraft["status"]>, string>;
+
+export const leadStatusLabels = {
+  eligible: "Potencial aderência ao escritório",
+  needs_human_review: "Revisão humana recomendada",
+  out_of_scope: "Fora do escopo trabalhista",
+  incomplete: "Triagem ainda incompleta",
+} satisfies Record<LeadClassification["status"], string>;
