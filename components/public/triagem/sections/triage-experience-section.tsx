@@ -11,7 +11,6 @@ import type {
 import { emptyCaseDraft, mergeCaseDraft } from "@/lib/triage-state";
 import type { CaseDraft } from "@/schemas";
 import { TriagePreviewPanel } from "./triage-preview-panel";
-import { TriageSidebar } from "./triage-sidebar";
 
 function getTriageState(messages: TriageChatMessage[]) {
   let caseDraft: Partial<CaseDraft> = emptyCaseDraft;
@@ -135,7 +134,7 @@ export function TriageExperienceSection() {
     <section
       id="area-triagem"
       aria-label="Experiência de triagem"
-      className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(18rem,0.8fr)]">
+      className="mx-auto w-full max-w-6xl">
       <TriagePreviewPanel
         messages={messages}
         status={status}
@@ -151,11 +150,6 @@ export function TriageExperienceSection() {
           void stop();
         }}
         onClearError={clearError}
-      />
-      <TriageSidebar
-        caseDraft={caseDraft}
-        classification={classification}
-        submission={submission}
       />
     </section>
   );
