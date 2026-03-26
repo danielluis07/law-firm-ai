@@ -17,11 +17,12 @@ import {
 import { cn } from "@/lib/utils";
 
 const navigation = [
-  { href: "/", label: "Início" },
-  { href: "/#sobre", label: "Sobre" },
-  { href: "/#areas-de-atuacao", label: "Áreas de Atuação" },
-  { href: "/#diferenciais", label: "Diferenciais" },
-  { href: "/#contato", label: "Contato" },
+  { href: "/#inicio", label: "Inicio" },
+  { href: "/#situacoes", label: "Como ajudamos" },
+  { href: "/#triagem", label: "Triagem" },
+  { href: "/#equipe", label: "Equipe" },
+  { href: "/#duvidas", label: "Duvidas" },
+  { href: "/contato-direto", label: "Contato" },
 ];
 
 const desktopLinkClassName =
@@ -34,10 +35,10 @@ export function Navbar() {
         <Link
           href="/"
           className="flex min-w-0 items-center gap-3 transition-opacity hover:opacity-90"
-          aria-label="Tavares e Lima Consultoria Trabalhista, voltar ao início">
+          aria-label="Tavares e Lima Advocacia Trabalhista, voltar ao inicio">
           <Image
             src={logo}
-            alt="Logo da Tavares e Lima Consultoria Trabalhista"
+            alt="Logo do escritorio Tavares e Lima"
             className="h-18 w-auto shrink-0"
           />
           <div className="min-w-0">
@@ -45,14 +46,14 @@ export function Navbar() {
               Tavares &amp; Lima
             </p>
             <p className="truncate text-[0.72rem] font-medium uppercase tracking-[0.22em] text-muted-foreground">
-              Consultoria Trabalhista
+              Advocacia Trabalhista
             </p>
           </div>
         </Link>
 
         <nav
           aria-label="Navegação principal"
-          className="ml-auto hidden items-center gap-8 lg:flex">
+          className="ml-auto hidden items-center gap-6 lg:flex">
           {navigation.map((item) => (
             <Link
               key={item.href}
@@ -65,7 +66,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button asChild size="lg" className="px-5 shadow-sm">
-            <Link href="/contato-direto">Fale com um especialista</Link>
+            <Link href="/contato-direto">Falar com a equipe</Link>
           </Button>
         </div>
 
@@ -98,10 +99,10 @@ export function Navbar() {
                     <Link
                       href="/"
                       className="flex items-center gap-3"
-                      aria-label="Tavares e Lima Consultoria Trabalhista, voltar ao início">
+                      aria-label="Tavares e Lima Advocacia Trabalhista, voltar ao inicio">
                       <Image
                         src={logo}
-                        alt="Logo da Tavares e Lima Consultoria Trabalhista"
+                        alt="Logo do escritorio Tavares e Lima"
                         className="h-10 w-auto shrink-0"
                       />
                       <div>
@@ -109,7 +110,7 @@ export function Navbar() {
                           Tavares &amp; Lima
                         </p>
                         <p className="text-[0.68rem] font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                          Consultoria Trabalhista
+                          Advocacia Trabalhista
                         </p>
                       </div>
                     </Link>
@@ -140,7 +141,7 @@ export function Navbar() {
                         buttonVariants({ size: "lg" }),
                         "w-full shadow-sm",
                       )}>
-                      Fale com um especialista
+                      Falar com a equipe
                     </Link>
                   </SheetClose>
                 </div>

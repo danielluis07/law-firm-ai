@@ -132,10 +132,10 @@ export function TriagePreviewPanel({
         <div className="flex items-center justify-between gap-4">
           <div className="min-w-0 flex-1">
             <CardTitle className="truncate font-display text-lg leading-tight text-primary sm:text-xl">
-              Triagem trabalhista
+              Triagem do caso trabalhista
             </CardTitle>
             <CardDescription className="mt-0.5 text-sm text-muted-foreground">
-              Conversa guiada para organizar o caso
+              Conversa guiada para organizar fatos, vinculo e provas
             </CardDescription>
           </div>
 
@@ -177,8 +177,8 @@ export function TriagePreviewPanel({
                   Assistente de triagem
                 </p>
                 <p className="mt-3 text-sm leading-7 text-foreground/88 sm:text-[0.96rem]">
-                  Olá. Conte o que aconteceu no trabalho, quando começou o
-                  problema e se ainda existe vínculo com a empresa. Eu sigo com
+                  Ola. Conte o que aconteceu no trabalho, quando o problema
+                  comecou e se voce ainda trabalha no local. Eu sigo com
                   perguntas curtas para organizar seu caso.
                 </p>
               </div>

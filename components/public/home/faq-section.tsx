@@ -9,12 +9,12 @@ const faqItems = [
   {
     question: "Como funciona a triagem inicial?",
     answer:
-      "A triagem e o primeiro passo do atendimento. Voce responde perguntas objetivas sobre sua situacao, e nossa equipe organiza as informacoes para orientar o proximo caminho com clareza.",
+      "A triagem e o primeiro passo do atendimento. Voce responde perguntas objetivas sobre sua situacao, e nossa equipe recebe um resumo mais organizado para orientar o proximo caminho com clareza.",
   },
   {
     question: "Vou falar com um advogado ou com um assistente primeiro?",
     answer:
-      "Normalmente o primeiro contato e conduzido por um assistente treinado para coletar dados essenciais. Quando necessario, o caso e encaminhado para analise com advogado da equipe.",
+      "O primeiro contato pode comecar pela triagem ou por um atendimento inicial da equipe. Quando necessario, o caso segue para analise com advogado trabalhista.",
   },
   {
     question: "A triagem substitui a analise juridica?",
@@ -24,7 +24,7 @@ const faqItems = [
   {
     question: "Quais tipos de situacao voces atendem?",
     answer:
-      "Atendemos demandas trabalhistas como verbas rescisorias, horas extras, ausencia de registro, FGTS e outras situacoes relacionadas ao vinculo de trabalho. Na triagem, avaliamos se seu contexto esta dentro da nossa atuacao.",
+      "Atuamos em favor do trabalhador em demandas como verbas rescisorias, horas extras, ausencia de registro, FGTS, assedio e outras situacoes relacionadas ao vinculo de trabalho. Na triagem, avaliamos se o seu contexto esta dentro da nossa atuacao.",
   },
   {
     question: "Preciso ter todos os documentos antes de comecar?",
@@ -46,6 +46,7 @@ const faqItems = [
 export function FaqSection() {
   return (
     <section
+      id="duvidas"
       aria-labelledby="faq-title"
       className="px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
@@ -62,12 +63,12 @@ export function FaqSection() {
               </h2>
               <p className="mt-5 max-w-lg text-base leading-8 text-muted-foreground sm:text-lg">
                 Esclareca as duvidas mais comuns antes de iniciar sua triagem ou
-                conversar com nossa equipe.
+                falar com nossa equipe juridica.
               </p>
 
               <p className="mt-5 border-l-2 border-accent/65 pl-4 text-sm leading-7 text-muted-foreground">
-                Respostas objetivas para voce avancar com mais seguranca e
-                confianca no proximo passo.
+                Respostas objetivas para voce entender melhor seus direitos e
+                avancar com mais seguranca no proximo passo.
               </p>
             </div>
 

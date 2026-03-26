@@ -10,10 +10,10 @@ export function TriageHeader() {
         <Link
           href="/"
           className="flex min-w-0 items-center gap-3 transition-opacity hover:opacity-90"
-          aria-label="Tavares e Lima Consultoria Trabalhista, voltar ao início">
+          aria-label="Tavares e Lima Advocacia Trabalhista, voltar ao inicio">
           <Image
             src={logo}
-            alt="Logo da Tavares e Lima Consultoria Trabalhista"
+            alt="Logo do escritorio Tavares e Lima"
             className="h-12 w-auto shrink-0"
           />
           <div className="min-w-0">
@@ -21,7 +21,7 @@ export function TriageHeader() {
               Tavares &amp; Lima
             </p>
             <p className="truncate text-[0.68rem] font-medium uppercase tracking-[0.2em] text-muted-foreground">
-              Consultoria Trabalhista
+              Advocacia Trabalhista
             </p>
           </div>
         </Link>

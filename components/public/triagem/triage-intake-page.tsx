@@ -12,9 +12,9 @@ import { TriageExperienceSection } from "./sections/triage-experience-section";
 import { TriageHeader } from "./sections/triage-header";
 
 const orientationSteps = [
-  "Conte a situação em linguagem simples, como falaria com a equipe.",
-  "O chat organiza os fatos essenciais e aprofunda só o que importa.",
-  "Se houver aderência, o caso pode seguir para revisão humana.",
+  "Conte a situacao em linguagem simples, como falaria com a equipe.",
+  "O chat organiza os fatos essenciais e aprofunda so o que importa.",
+  "Se o caso se encaixar na nossa atuacao, a equipe juridica avalia os proximos passos.",
 ] as const;
 
 const supportNotes = [
@@ -44,12 +44,13 @@ export function TriageIntakePage() {
             <h1
               id="triagem-heading"
               className="mt-4 max-w-4xl text-balance font-display text-4xl leading-[1.02] text-primary sm:text-5xl lg:text-[4.2rem]">
-              Conte o que aconteceu. O chat conduz a triagem com clareza.
+              Conte o que aconteceu. A triagem ajuda a organizar o seu caso com
+              clareza.
             </h1>
             <p className="mt-5 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">
-              Esta página foi redesenhada para colocar a conversa no centro. Em
-              vez de um formulário longo, você descreve a situação e o chat vai
-              coletando vínculo, fatos, provas e contato no ritmo certo.
+              Em vez de um formulario longo, voce descreve a situacao e o chat
+              vai coletando vinculo, fatos, provas e contato no ritmo certo.
+              Assim, a equipe recebe um panorama mais claro do seu caso.
             </p>
 
             <div className="mt-7 flex flex-wrap gap-3">
@@ -78,11 +79,11 @@ export function TriageIntakePage() {
                 Como aproveitar melhor
               </p>
               <CardTitle className="font-display text-[1.65rem] leading-tight text-primary">
-                Use a conversa para organizar o caso antes do atendimento
+                Use a conversa para organizar os fatos antes da analise juridica
               </CardTitle>
               <CardDescription className="text-sm leading-7 text-muted-foreground">
-                O foco aqui é chegar rápido ao ponto central do problema, sem
-                perder contexto importante.
+                O foco aqui e chegar rapido ao ponto central do problema, sem
+                perder contexto importante para a defesa dos seus direitos.
               </CardDescription>
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
@@ -139,9 +140,9 @@ export function TriageIntakePage() {
             </CardHeader>
             <CardContent className="flex flex-col gap-4">
               <p className="text-sm leading-7 text-foreground/84">
-                Você pode pular a triagem por chat e enviar seu caso para uma
-                análise inicial humana, mantendo a mesma linha visual e o mesmo
-                cuidado com a informação.
+                Voce pode pular a triagem por chat e enviar seu caso para uma
+                analise inicial humana quando preferir contato direto desde o
+                primeiro momento.
               </p>
               <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Button asChild variant="outline" size="lg" className="px-6">

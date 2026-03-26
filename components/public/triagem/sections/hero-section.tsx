@@ -22,9 +22,9 @@ export function HeroSection() {
         </h1>
         <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
           Esta etapa foi pensada para organizar seu primeiro atendimento. Em
-          poucos minutos, você passará por uma coleta inicial de informações
-          para identificar sinais relevantes do seu caso com clareza, linguagem
-          acessível e estrutura.
+          poucos minutos, voce passa por uma coleta inicial de informacoes para
+          identificar sinais relevantes do seu caso com clareza, linguagem
+          acessivel e estrutura.
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3">
@@ -44,10 +44,10 @@ export function HeroSection() {
             Aviso importante
           </p>
           <CardTitle className="font-display text-[1.55rem] leading-tight text-primary">
-            Primeira análise organizada, sem promessas indevidas
+            Primeira analise organizada, sem promessas indevidas
           </CardTitle>
           <CardDescription className="text-sm leading-7 text-muted-foreground">
-            Esta triagem inicial não substitui orientação jurídica formal. Ela
+            Esta triagem inicial nao substitui orientacao juridica formal. Ela
             serve como um primeiro filtro para encaminhamento mais cuidadoso do
             atendimento.
           </CardDescription>

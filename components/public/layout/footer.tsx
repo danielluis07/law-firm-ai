@@ -5,12 +5,11 @@ import { Button } from "@/components/ui/button";
 
 const quickLinks = [
   { href: "/#inicio", label: "Inicio" },
-  { href: "/#sobre", label: "Sobre" },
-  { href: "/#situations-title", label: "Situacoes que atendemos" },
-  { href: "/#triage-title", label: "Triagem" },
+  { href: "/#situacoes", label: "Como ajudamos" },
+  { href: "/#triagem", label: "Triagem" },
   { href: "/#equipe", label: "Equipe" },
-  { href: "/#faq-title", label: "FAQ" },
-  { href: "/#contato", label: "Contato" },
+  { href: "/#duvidas", label: "Duvidas" },
+  { href: "/contato-direto", label: "Contato direto" },
 ];
 
 const serviceChannels = [
@@ -38,10 +37,10 @@ export function Footer() {
           <Link
             href="/"
             className="inline-flex items-center gap-3 transition-opacity hover:opacity-90"
-            aria-label="Tavares e Lima Consultoria Trabalhista, voltar ao inicio">
+            aria-label="Tavares e Lima Advocacia Trabalhista, voltar ao inicio">
             <Image
               src={logo}
-              alt="Logo da Tavares e Lima Consultoria Trabalhista"
+              alt="Logo do escritorio Tavares e Lima"
               className="h-14 w-auto"
             />
             <div>
@@ -51,15 +50,15 @@ export function Footer() {
                 Tavares &amp; Lima
               </p>
               <p className="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-muted-foreground">
-                Consultoria Trabalhista
+                Advocacia Trabalhista
               </p>
             </div>
           </Link>
 
           <p className="mt-6 max-w-xl text-sm leading-7 text-muted-foreground sm:text-[0.97rem]">
-            Atuacao juridica consultiva com foco em seguranca trabalhista,
-            clareza tecnica e suporte profissional para decisoes empresariais
-            mais confiaveis.
+            Atuacao juridica voltada a defesa do trabalhador, com analise
+            cuidadosa dos fatos, clareza sobre direitos e encaminhamento
+            responsavel para cada caso.
           </p>
 
           <div className="mt-7 rounded-md border border-border/75 bg-background/70 p-4 sm:p-5">
@@ -67,12 +66,12 @@ export function Footer() {
               Atendimento especializado
             </p>
             <p className="mt-2 text-sm leading-7 text-foreground/85 sm:text-[0.96rem]">
-              Fale com nossa equipe para uma orientacao inicial e receba o
-              direcionamento adequado para o seu caso.
+              Fale com nossa equipe para uma orientacao inicial e entenda qual
+              pode ser o melhor caminho para o seu caso trabalhista.
             </p>
             <div className="mt-4">
               <Button asChild size="sm" className="px-5">
-                <Link href="/triagem">Solicitar atendimento</Link>
+                <Link href="/triagem">Iniciar atendimento</Link>
               </Button>
             </div>
           </div>
@@ -118,7 +117,7 @@ export function Footer() {
       <div className="border-t border-border/70 bg-background/75">
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-3 px-5 py-4 sm:px-8 sm:py-5 lg:flex-row lg:items-center lg:justify-between lg:px-10">
           <p className="text-xs leading-6 text-muted-foreground sm:text-sm">
-            © {currentYear} Tavares &amp; Lima Consultoria Trabalhista. Todos os
+            © {currentYear} Tavares &amp; Lima Advocacia Trabalhista. Todos os
             direitos reservados.
           </p>
 

@@ -9,10 +9,10 @@ import {
 } from "@/components/ui/card";
 
 const credibilityPoints = [
-  "Atendimento humanizado",
-  "Analise cuidadosa do caso",
-  "Atuacao estrategica",
-  "Orientacao com clareza",
+  "Atendimento proximo e respeitoso",
+  "Analise tecnica do historico de trabalho",
+  "Estrategia juridica para defesa do trabalhador",
+  "Clareza sobre direitos e proximos passos",
 ];
 
 export function LegalTeamSection() {
@@ -41,19 +41,19 @@ export function LegalTeamSection() {
               <Card className="w-full border-border/70 bg-background/72 shadow-[0_22px_70px_-54px_oklch(0.22_0.09_240/0.3)]">
                 <CardHeader className="gap-3">
                   <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent sm:text-sm">
-                    Nossa equipe juridica
+                    Equipe juridica
                   </p>
                   <CardTitle
                     id="legal-team-title"
                     className="font-display text-3xl leading-tight text-primary sm:text-4xl lg:text-[2.7rem]">
-                    Experiencia juridica e orientacao confiavel para cada
-                    decisao.
+                    Advocacia trabalhista com atencao ao seu caso e firmeza na
+                    defesa dos seus direitos.
                   </CardTitle>
                   <CardDescription className="text-sm leading-7 text-muted-foreground sm:text-[0.97rem]">
-                    Combinamos solidez tecnica, atendimento atento e analise
-                    cuidadosa para conduzir cada caso com responsabilidade,
-                    clareza e compromisso com a seguranca juridica de quem nos
-                    procura.
+                    Unimos leitura tecnica do caso, escuta atenta e estrategia
+                    juridica para orientar cada trabalhador com responsabilidade,
+                    transparencia e compromisso real com a defesa dos seus
+                    direitos.
                   </CardDescription>
                 </CardHeader>
 

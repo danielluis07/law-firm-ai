@@ -20,20 +20,20 @@ import {
 
 const trustHighlights = [
   {
-    title: "Revisão humana desde o início",
-    text: "Sua solicitação pode ser analisada por uma pessoa da equipe, sem etapa inicial de chatbot.",
+    title: "Atendimento humano desde o inicio",
+    text: "Voce pode apresentar sua situacao diretamente para a equipe, sem depender do chat como primeira etapa.",
   },
   {
-    title: "Atuação focada em direito do trabalho",
-    text: "Fluxo pensado para situações como demissão, verbas rescisórias, FGTS e assédio.",
+    title: "Atuacao focada na defesa do trabalhador",
+    text: "Fluxo pensado para situacoes como demissao, verbas rescisorias, FGTS, assedio e outras violacoes trabalhistas.",
   },
   {
-    title: "Tratamento confidencial das informações",
-    text: "Os dados enviados são tratados com sigilo e utilizados para avaliação inicial do caso.",
+    title: "Tratamento confidencial das informacoes",
+    text: "Os dados enviados sao tratados com sigilo e utilizados para avaliacao inicial do caso.",
   },
   {
-    title: "Contato estruturado quando aplicável",
-    text: "Quando o caso se encaixa na atuação da equipe, o próximo passo pode ser organizado por um especialista.",
+    title: "Proximo passo com mais clareza",
+    text: "Quando o caso se encaixa na nossa atuacao, a equipe organiza o encaminhamento inicial com mais objetividade.",
   },
 ];
 
@@ -96,10 +96,10 @@ export default function ContatoDiretoPage() {
           <Link
             href="/"
             className="flex items-center gap-3 transition-opacity hover:opacity-90"
-            aria-label="Tavares e Lima Consultoria Trabalhista, voltar ao início">
+            aria-label="Tavares e Lima Advocacia Trabalhista, voltar ao inicio">
             <Image
               src={logo}
-              alt="Logo da Tavares e Lima Consultoria Trabalhista"
+              alt="Logo do escritorio Tavares e Lima"
               className="h-12 w-auto shrink-0"
             />
             <div>
@@ -107,7 +107,7 @@ export default function ContatoDiretoPage() {
                 Tavares &amp; Lima
               </p>
               <p className="text-[0.68rem] font-medium uppercase tracking-[0.19em] text-muted-foreground">
-                Consultoria Trabalhista
+                Advocacia Trabalhista
               </p>
             </div>
           </Link>
@@ -132,12 +132,13 @@ export default function ContatoDiretoPage() {
                 Contato humano direto
               </p>
               <h1 className="mt-4 text-balance font-display text-4xl leading-tight text-primary sm:text-5xl lg:text-[3.2rem]">
-                Fale diretamente com um especialista sobre seu caso trabalhista
+                Fale diretamente com nossa equipe sobre a violacao dos seus
+                direitos trabalhistas
               </h1>
               <p className="mt-5 max-w-3xl text-base leading-8 text-muted-foreground sm:text-lg">
-                Se você prefere atendimento humano desde o início, envie seus
-                dados e um breve resumo do caso. Nossa equipe fará a análise
-                inicial e poderá entrar em contato pelo canal informado.
+                Se voce prefere atendimento humano desde o inicio, envie seus
+                dados e um breve resumo do caso. Nossa equipe fara a analise
+                inicial e podera entrar em contato pelo canal informado.
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -148,7 +149,7 @@ export default function ContatoDiretoPage() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="px-7">
-                  <Link href="/triagem">Iniciar triagem com IA</Link>
+                  <Link href="/triagem">Quero comecar pela triagem</Link>
                 </Button>
               </div>
             </div>
@@ -188,8 +189,8 @@ export default function ContatoDiretoPage() {
                     Solicitação de contato direto
                   </CardTitle>
                   <CardDescription className="text-sm leading-7 text-muted-foreground">
-                    Preencha os campos abaixo para avaliação inicial do seu caso
-                    pela equipe.
+                    Preencha os campos abaixo para avaliacao inicial do seu caso
+                    pela equipe juridica.
                   </CardDescription>
                 </CardHeader>
 
@@ -207,10 +208,10 @@ export default function ContatoDiretoPage() {
                             Sua solicitação foi recebida
                           </h2>
                           <p className="mt-3 text-sm leading-7 text-muted-foreground">
-                            Nossa equipe analisará as informações enviadas. Se o
-                            seu caso estiver dentro da nossa área de atuação
-                            trabalhista, poderemos entrar em contato pelo canal
-                            informado.
+                            Nossa equipe analisara as informacoes enviadas. Se o
+                            seu caso estiver dentro da nossa atuacao em defesa
+                            do trabalhador, poderemos entrar em contato pelo
+                            canal informado.
                           </p>
                         </div>
                       </div>
@@ -224,7 +225,7 @@ export default function ContatoDiretoPage() {
                           variant="outline"
                           size="lg"
                           className="px-6">
-                          <Link href="/triagem">Iniciar triagem com IA</Link>
+                          <Link href="/triagem">Iniciar triagem do caso</Link>
                         </Button>
                       </div>
                     </div>
@@ -260,7 +261,7 @@ export default function ContatoDiretoPage() {
                           <label
                             htmlFor="employmentStatus"
                             className="text-sm font-medium text-foreground">
-                            Você ainda trabalha na empresa?
+                            Voce ainda trabalha nesse local?
                           </label>
                           <select
                             id="employmentStatus"
@@ -272,7 +273,7 @@ export default function ContatoDiretoPage() {
                               Selecione uma opção
                             </option>
                             <option value="yes">
-                              Sim, ainda trabalho na empresa
+                              Sim, ainda trabalho no local
                             </option>
                             <option value="no">Não, não trabalho mais</option>
                           </select>
@@ -346,7 +347,7 @@ export default function ContatoDiretoPage() {
                           variant="outline"
                           size="lg"
                           className="px-7">
-                          <Link href="/triagem">Iniciar triagem com IA</Link>
+                          <Link href="/triagem">Iniciar triagem do caso</Link>
                         </Button>
                       </div>
 
@@ -363,15 +364,15 @@ export default function ContatoDiretoPage() {
                 <Card className="border-border/80 bg-card/88">
                   <CardHeader>
                     <CardTitle className="text-2xl text-primary">
-                      Quando esta opção é melhor
+                      Quando esta opcao faz mais sentido
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
                     <ul className="flex flex-col gap-3 text-sm leading-7 text-muted-foreground">
-                      <li>Você prefere contato humano direto</li>
-                      <li>Sua situação parece urgente</li>
-                      <li>Você já entende o problema principal</li>
-                      <li>Você não quer passar primeiro pela triagem com IA</li>
+                      <li>Voce prefere contato humano direto</li>
+                      <li>Sua situacao parece urgente</li>
+                      <li>Voce ja entende o problema principal</li>
+                      <li>Voce nao quer passar primeiro pela triagem</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -384,11 +385,11 @@ export default function ContatoDiretoPage() {
                   </CardHeader>
                   <CardContent>
                     <ol className="flex flex-col gap-3 text-sm leading-7 text-muted-foreground">
-                      <li>1. Você envia suas informações</li>
-                      <li>2. Nossa equipe faz a análise inicial</li>
+                      <li>1. Voce envia suas informacoes</li>
+                      <li>2. Nossa equipe faz a analise inicial</li>
                       <li>
-                        3. Um especialista pode entrar em contato se o caso
-                        estiver na nossa área de atuação
+                        3. A equipe pode entrar em contato se o caso estiver na
+                        nossa area de atuacao
                       </li>
                     </ol>
                   </CardContent>
@@ -402,9 +403,9 @@ export default function ContatoDiretoPage() {
                   </CardHeader>
                   <CardContent>
                     <ul className="flex flex-col gap-3 text-sm leading-7 text-muted-foreground">
-                      <li>Este é um pedido de contato inicial</li>
-                      <li>O envio não garante representação jurídica</li>
-                      <li>As informações são tratadas de forma confidencial</li>
+                      <li>Este e um pedido de contato inicial</li>
+                      <li>O envio nao garante representacao juridica</li>
+                      <li>As informacoes sao tratadas de forma confidencial</li>
                     </ul>
                   </CardContent>
                 </Card>
@@ -423,10 +424,10 @@ export default function ContatoDiretoPage() {
               </CardHeader>
               <CardContent>
                 <p className="max-w-4xl text-base leading-8 text-muted-foreground">
-                  Se o seu caso envolve uma demissão recente, verbas rescisórias
-                  em aberto, assédio no ambiente de trabalho ou outra situação
-                  trabalhista urgente, você pode enviar sua solicitação para
-                  análise humana direta.
+                  Se o seu caso envolve uma demissao recente, verbas
+                  rescisorias em aberto, assedio no ambiente de trabalho ou
+                  outra situacao trabalhista urgente, voce pode enviar sua
+                  solicitacao para analise humana direta.
                 </p>
               </CardContent>
             </Card>
@@ -441,17 +442,17 @@ export default function ContatoDiretoPage() {
                   Fluxo alternativo
                 </p>
                 <CardTitle className="text-3xl text-primary">
-                  Prefere começar com uma triagem guiada?
+                  Prefere comecar com uma triagem guiada?
                 </CardTitle>
                 <CardDescription className="max-w-3xl text-base leading-8 text-muted-foreground">
-                  Se você quiser organizar seu caso etapa por etapa antes da
-                  análise humana, pode iniciar pela nossa experiência de triagem
-                  assistida por IA.
+                  Se voce quiser organizar o caso etapa por etapa antes da
+                  analise humana, pode iniciar pela nossa experiencia de
+                  triagem assistida.
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <Button asChild size="lg" className="px-7">
-                  <Link href="/triagem">Iniciar triagem com IA</Link>
+                  <Link href="/triagem">Iniciar triagem do caso</Link>
                 </Button>
               </CardContent>
             </Card>

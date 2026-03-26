@@ -3,8 +3,8 @@ import type { CaseDraft, LeadClassification } from "@/schemas";
 export const microcopyItems = [
   "Leva apenas alguns minutos",
   "Linguagem simples e objetiva",
-  "Triagem inicial automatizada",
-  "Casos aderentes podem seguir para revisão humana",
+  "Triagem inicial assistida",
+  "Casos aderentes podem seguir para avaliacao humana",
 ];
 
 export const credibilityCards = [
@@ -14,19 +14,19 @@ export const credibilityCards = [
       "Uma primeira leitura estruturada do seu relato para organizar o atendimento com mais clareza.",
   },
   {
-    title: "Foco em Direito do Trabalho",
+    title: "Foco na defesa do trabalhador",
     description:
-      "Fluxo pensado para situações comuns da rotina trabalhista e do encerramento do vínculo.",
+      "Fluxo pensado para situacoes comuns da rotina trabalhista e do encerramento do vinculo.",
   },
   {
     title: "Encaminhamento qualificado",
     description:
-      "Quando houver aderência, as próximas etapas podem seguir para avaliação da equipe especialista.",
+      "Quando houver aderencia, as proximas etapas podem seguir para avaliacao da equipe juridica.",
   },
   {
     title: "Tratamento confidencial",
     description:
-      "As informações prestadas são apresentadas em ambiente reservado e com comunicação cuidadosa.",
+      "As informacoes prestadas sao apresentadas em ambiente reservado e com comunicacao cuidadosa.",
   },
 ] as const;
 
@@ -60,15 +60,15 @@ export const quickReplies = [
 ] as const;
 
 export const howItWorksSteps = [
-  "Você responde algumas perguntas iniciais",
+  "Voce responde algumas perguntas iniciais",
   "O sistema identifica sinais relacionados ao seu caso",
-  "Nossa equipe pode avaliar os próximos passos",
+  "Nossa equipe pode avaliar os proximos passos",
 ] as const;
 
 export const importantItems = [
-  "Triagem inicial automatizada",
-  "Revisão humana para casos elegíveis",
-  "Informações tratadas de forma confidencial",
+  "Triagem inicial assistida",
+  "Revisao humana para casos elegiveis",
+  "Informacoes tratadas de forma confidencial",
 ] as const;
 
 export const commonMatters = [
@@ -92,13 +92,13 @@ export const issueTypeLabels = {
 export const caseStatusLabels = {
   collecting: "Coletando informações",
   ready_for_review: "Pronto para revisão humana",
-  out_of_scope: "Fora do escopo trabalhista",
+  out_of_scope: "Fora da nossa atuacao trabalhista",
   incomplete: "Ainda faltam informações",
 } satisfies Record<NonNullable<CaseDraft["status"]>, string>;
 
 export const leadStatusLabels = {
-  eligible: "Potencial aderência ao escritório",
-  needs_human_review: "Revisão humana recomendada",
-  out_of_scope: "Fora do escopo trabalhista",
+  eligible: "Caso com potencial de atendimento",
+  needs_human_review: "Analise humana recomendada",
+  out_of_scope: "Fora da nossa atuacao trabalhista",
   incomplete: "Triagem ainda incompleta",
 } satisfies Record<LeadClassification["status"], string>;

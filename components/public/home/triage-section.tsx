@@ -9,14 +9,15 @@ import {
 } from "@/components/ui/card";
 
 const triageSteps = [
-  "Você responde algumas perguntas",
-  "Entendemos sua situação",
-  "Direcionamos o próximo passo",
+  "Voce relata o que aconteceu",
+  "A triagem organiza os pontos essenciais do caso",
+  "Nossa equipe avalia o proximo passo possivel",
 ];
 
 export function TriageSection() {
   return (
     <section
+      id="triagem"
       aria-labelledby="triage-title"
       className="px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
@@ -24,18 +25,18 @@ export function TriageSection() {
           <div className="grid gap-8 px-6 py-8 sm:px-8 sm:py-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.9fr)] lg:items-center lg:gap-10 lg:px-10 lg:py-12">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-accent sm:text-sm">
-                Seção de triagem
+                Primeiro passo
               </p>
               <h2
                 id="triage-title"
                 className="mt-4 max-w-xl font-display text-3xl leading-tight text-primary sm:text-4xl lg:text-[2.85rem]">
-                Entenda seu caso em poucos minutos, com clareza e organização.
+                Entenda se a sua situacao pode envolver direitos trabalhistas
+                desrespeitados.
               </h2>
               <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
-                Antes de falar com nossa equipe, você pode responder algumas
-                perguntas objetivas. Isso ajuda a compreender sua situação com
-                mais precisão e indicar o próximo passo adequado para o seu
-                atendimento.
+                Antes de avancar para a analise da equipe, voce pode responder
+                algumas perguntas objetivas. Isso ajuda a organizar os fatos do
+                seu caso e indicar o proximo passo com mais precisao.
               </p>
 
               <ol className="mt-7 grid gap-3">
@@ -55,16 +56,16 @@ export function TriageSection() {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Button asChild size="lg" className="px-7 shadow-sm">
-                  <Link href="/triagem">Iniciar triagem</Link>
+                  <Link href="/triagem">Iniciar triagem do meu caso</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="px-7">
-                  <Link href="/contato-direto">Prefiro falar com a equipe</Link>
+                  <Link href="/contato-direto">Quero atendimento direto</Link>
                 </Button>
               </div>
 
               <p className="mt-5 border-l-2 border-accent/65 pl-4 text-sm leading-7 text-muted-foreground">
-                Triagem inicial rápida, clara e confidencial para facilitar seu
-                primeiro passo.
+                Triagem inicial rapida, confidencial e pensada para facilitar
+                seu primeiro contato com a equipe juridica.
               </p>
 
               <p className="mt-3 text-xs leading-6 text-muted-foreground/90 sm:text-sm">
@@ -76,14 +77,14 @@ export function TriageSection() {
             <Card className="relative border-border/80 bg-background/88 shadow-[0_28px_90px_-60px_oklch(0.22_0.09_240/0.38)]">
               <CardHeader className="gap-2">
                 <p className="text-[0.68rem] font-semibold uppercase tracking-[0.2em] text-accent">
-                  Pré-atendimento guiado
+                  Como funciona
                 </p>
                 <CardTitle className="font-display text-2xl leading-tight text-primary sm:text-[1.75rem]">
-                  Prévia da triagem
+                  Previa da triagem
                 </CardTitle>
                 <CardDescription className="text-sm leading-7 text-muted-foreground sm:text-[0.95rem]">
-                  Um fluxo simples para reunir informações importantes antes do
-                  contato com a equipe.
+                  Um fluxo simples para reunir informacoes importantes antes do
+                  contato com a equipe juridica.
                 </CardDescription>
               </CardHeader>
               <CardContent className="flex flex-col gap-4">
@@ -92,15 +93,16 @@ export function TriageSection() {
                     Etapa 1 de 3
                   </p>
                   <p className="mt-2 text-sm leading-7 text-foreground/88">
-                    &ldquo;Seu vínculo foi encerrado recentemente ou os
-                    pagamentos esperados não foram concluídos?&rdquo;
+                    &ldquo;Voce foi desligado recentemente ou continua
+                    trabalhando com direitos que nao estao sendo
+                    respeitados?&rdquo;
                   </p>
                 </div>
 
                 <div className="ml-auto max-w-[88%] rounded-md border border-border/70 bg-secondary/70 px-4 py-3">
                   <p className="text-sm leading-7 text-foreground/88">
-                    Sim. Fui desligado(a) e ainda tenho dúvidas sobre o que
-                    deveria ter recebido.
+                    Sim. Fui desligado(a) e ainda tenho duvidas sobre o que
+                    deveria ter recebido na rescisao.
                   </p>
                 </div>
 
@@ -110,7 +112,8 @@ export function TriageSection() {
                   </p>
                   <p className="mt-2 text-sm leading-7 text-foreground/88">
                     Obrigado. Com base nas suas respostas, vamos priorizar os
-                    pontos essenciais e orientar o próximo passo com clareza.
+                    pontos essenciais do caso e orientar o proximo passo com
+                    clareza.
                   </p>
                 </div>
 

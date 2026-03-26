@@ -15,7 +15,7 @@ export function Hero() {
             <div className="relative min-h-88 border-b border-border/70 bg-secondary/20 sm:min-h-120 lg:min-h-168 lg:border-b-0">
               <Image
                 src={heroImage}
-                alt="Retrato profissional da consultora da Tavares e Lima Consultoria Trabalhista"
+                alt="Retrato profissional da equipe da Tavares e Lima"
                 fill
                 priority
                 placeholder="blur"
@@ -29,37 +29,37 @@ export function Hero() {
             <div className="relative flex items-center bg-card/88 px-6 py-10 sm:px-10 sm:py-12 lg:-ml-14 lg:border-l lg:border-border/70 lg:pl-12 xl:pl-16">
               <div className="max-w-xl">
                 <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent sm:text-sm">
-                  Consultoria Trabalhista para Empresas
+                  Advocacia trabalhista voltada ao trabalhador
                 </p>
 
                 <h1
                   id="hero-title"
                   className="mt-5 max-w-3xl font-display text-4xl leading-[1.02] text-primary sm:text-5xl lg:text-[3.6rem]">
-                  Segurança jurídica trabalhista para empresas que precisam
-                  decidir com firmeza.
+                  Defendemos os seus direitos no trabalho com clareza,
+                  estrategia e firmeza.
                 </h1>
 
                 <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
-                  A Tavares &amp; Lima Consultoria Trabalhista orienta empresas
-                  na condução de decisões mais seguras, na redução de riscos
-                  trabalhistas e na construção de rotinas com maior clareza
-                  jurídica.
+                  A Tavares &amp; Lima atua na defesa do trabalhador em casos
+                  como demissao sem justa causa, verbas rescisorias, horas
+                  extras, FGTS, assedio e outras violacoes trabalhistas que
+                  precisam de orientacao juridica seria.
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Button asChild size="lg" className="px-6 shadow-sm">
-                    <Link href="/contato-direto">Fale com um especialista</Link>
+                    <Link href="/contato-direto">Falar com a equipe</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="px-6">
-                    <Link href="/triagem">Iniciar triagem com IA</Link>
+                    <Link href="/triagem">Iniciar triagem do meu caso</Link>
                   </Button>
                 </div>
 
                 <div className="mt-8 border-l-2 border-accent/70 pl-4">
                   <p className="text-sm leading-7 text-muted-foreground sm:text-[0.95rem]">
-                    Atuação consultiva voltada à prevenção de passivos, revisão
-                    de práticas internas e suporte estratégico à gestão de
-                    pessoas.
+                    Atendimento juridico pensado para acolher a sua situacao,
+                    organizar os fatos e indicar o melhor caminho para a defesa
+                    dos seus direitos.
                   </p>
                 </div>
               </div>

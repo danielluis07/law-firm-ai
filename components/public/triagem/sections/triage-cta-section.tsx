@@ -14,12 +14,11 @@ export function TriageCtaSection() {
           <h2
             id="triagem-cta-title"
             className="mt-3 font-display text-3xl leading-tight sm:text-[2.4rem]">
-            Pronto para iniciar sua triagem inicial?
+            Pronto para iniciar a triagem do seu caso?
           </h2>
           <p className="mt-4 text-sm leading-7 text-primary-foreground/78 sm:text-base">
-            O fluxo conversacional será integrado em seguida. Esta página já
-            está preparada para receber a experiência completa com a mesma
-            organização apresentada acima.
+            Responda algumas perguntas objetivas para organizar os fatos e
+            facilitar a analise inicial da equipe juridica.
           </p>
         </div>
 

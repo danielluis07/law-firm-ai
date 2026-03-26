@@ -4,9 +4,9 @@ import { cn } from "@/lib/utils";
 import { inter } from "@/fonts";
 
 export const metadata: Metadata = {
-  title: "Tavares & Lima | Consultoria Trabalhista",
+  title: "Tavares & Lima | Advocacia Trabalhista",
   description:
-    "Consultoria trabalhista especializada em Direito do Trabalho, oferecendo soluções jurídicas personalizadas para empresas e trabalhadores. Nossa equipe de advogados experientes está pronta para ajudar com questões relacionadas a contratos, rescisões, acordos e muito mais. Conte conosco para proteger seus direitos e garantir o cumprimento das leis trabalhistas.",
+    "Advocacia trabalhista voltada à defesa do trabalhador, com atuação em casos de demissão sem justa causa, verbas rescisórias, horas extras, FGTS, assédio e outras violações de direitos no trabalho.",
 };
 
 export default function RootLayout({

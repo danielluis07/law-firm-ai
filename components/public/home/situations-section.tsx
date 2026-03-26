@@ -9,73 +9,74 @@ import {
 const situations = [
   {
     index: "01",
-    title: "Demissão sem justa causa",
+    title: "Demissao sem justa causa e rescisao",
     description:
-      "Você foi desligado e saiu sem entender exatamente o que deveria receber ou quais passos tomar agora.",
+      "Voce foi desligado e saiu sem entender exatamente o que deveria receber ou quais passos tomar agora.",
     highlight:
-      "É comum surgirem dúvidas sobre aviso, saldo, multa e prazo de pagamento.",
+      "E comum surgirem duvidas sobre aviso, saldo, multa de 40% e prazo de pagamento.",
   },
   {
     index: "02",
-    title: "Verbas rescisórias não pagas",
+    title: "Rescisao paga com atraso ou incompleta",
     description:
-      "A empresa encerrou o vínculo, mas os valores da rescisão não foram pagos por completo ou dentro do prazo.",
+      "A empresa encerrou o vinculo, mas os valores da rescisao nao foram pagos por completo ou dentro do prazo.",
     highlight:
-      "Quando o acerto demora ou vem incompleto, vale revisar com atenção.",
+      "Quando o acerto demora ou vem incompleto, vale revisar com atencao cada verba devida.",
   },
   {
     index: "03",
-    title: "Horas extras não reconhecidas",
+    title: "Horas extras, intervalos e jornada abusiva",
     description:
-      "Você trabalhava além do horário, atendia mensagens fora do expediente ou fazia plantões sem a compensação correta.",
+      "Voce trabalhava alem do horario, atendia mensagens fora do expediente ou fazia plantoes sem a compensacao correta.",
     highlight:
-      "Muita gente convive com essa rotina sem saber que pode haver diferenças a receber.",
+      "Muita gente convive com essa rotina sem saber que pode haver diferencas importantes a receber.",
   },
   {
     index: "04",
     title: "Trabalho sem carteira assinada",
     description:
-      "Havia rotina, cobrança e vínculo de trabalho, mas o registro nunca foi feito ou foi adiado repetidamente.",
+      "Havia rotina, cobranca e vinculo de trabalho, mas o registro nunca foi feito ou foi adiado repetidamente.",
     highlight:
-      "A falta de registro pode afetar férias, FGTS, INSS e outras garantias básicas.",
+      "A falta de registro pode afetar ferias, FGTS, INSS e outras garantias basicas.",
   },
   {
     index: "05",
-    title: "Assédio moral no ambiente de trabalho",
+    title: "Assedio moral e humilhacoes no trabalho",
     description:
-      "Você enfrentou humilhações, pressão constante, exposição indevida ou tratamento abusivo no dia a dia.",
+      "Voce enfrentou humilhacoes, pressao constante, exposicao indevida ou tratamento abusivo no dia a dia.",
     highlight:
-      "Nem sempre o problema aparece em um único episódio; às vezes ele se repete aos poucos.",
+      "Nem sempre o problema aparece em um unico episodio; as vezes ele se repete aos poucos e deixa marcas profundas.",
   },
   {
     index: "06",
-    title: "FGTS ou direitos não depositados",
+    title: "FGTS, ferias ou outros direitos nao cumpridos",
     description:
-      "Ao conferir seus documentos, você percebeu ausência de depósitos ou falhas em direitos que deveriam estar sendo cumpridos.",
+      "Ao conferir seus documentos, voce percebeu ausencia de depositos ou falhas em direitos que deveriam estar sendo cumpridos.",
     highlight:
-      "Essas diferenças costumam passar despercebidas por muito tempo e merecem revisão cuidadosa.",
+      "Essas diferencas costumam passar despercebidas por muito tempo e merecem revisao cuidadosa.",
   },
 ];
 
 export function SituationsSection() {
   return (
     <section
+      id="situacoes"
       aria-labelledby="situations-title"
       className="px-5 py-16 sm:px-8 sm:py-20 lg:px-10 lg:py-24">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.24em] text-accent sm:text-sm">
-            Reconhecimento do problema
+            Demandas frequentes
           </p>
           <h2
             id="situations-title"
             className="mt-4 font-display text-3xl leading-tight text-primary sm:text-4xl lg:text-[3rem]">
-            Situações que atendemos
+            Situacoes em que podemos ajudar
           </h2>
           <p className="mt-5 max-w-2xl text-base leading-8 text-muted-foreground sm:text-lg">
-            Se algo parecido aconteceu com você, este pode ser o momento de
+            Se algo parecido aconteceu com voce, este pode ser o momento de
             entender com mais clareza se seus direitos trabalhistas foram
-            desrespeitados.
+            desrespeitados e quais fatos merecem analise juridica.
           </p>
         </div>
 
