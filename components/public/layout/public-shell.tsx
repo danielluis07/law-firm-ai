@@ -10,7 +10,8 @@ type PublicShellProps = {
 
 export function PublicShell({ children }: PublicShellProps) {
   const pathname = usePathname();
-  const isFocusedIntakeRoute = pathname === "/triagem";
+  const isFocusedIntakeRoute =
+    pathname === "/triagem" || pathname === "/contato-direto";
 
   return (
     <>

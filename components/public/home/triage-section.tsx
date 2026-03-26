@@ -55,10 +55,10 @@ export function TriageSection() {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Button asChild size="lg" className="px-7 shadow-sm">
-                  <Link href="/#contato">Iniciar triagem</Link>
+                  <Link href="/triagem">Iniciar triagem</Link>
                 </Button>
                 <Button asChild variant="outline" size="lg" className="px-7">
-                  <Link href="/#contato">Prefiro falar com a equipe</Link>
+                  <Link href="/contato-direto">Prefiro falar com a equipe</Link>
                 </Button>
               </div>
 

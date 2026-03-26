@@ -48,10 +48,10 @@ export function Hero() {
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <Button asChild size="lg" className="px-6 shadow-sm">
-                    <Link href="/#contato">Fale com um especialista</Link>
+                    <Link href="/contato-direto">Fale com um especialista</Link>
                   </Button>
                   <Button asChild variant="outline" size="lg" className="px-6">
-                    <Link href="/#sobre">Conheça a consultoria</Link>
+                    <Link href="/triagem">Iniciar triagem com IA</Link>
                   </Button>
                 </div>
 

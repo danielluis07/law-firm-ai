@@ -65,7 +65,7 @@ export function Navbar() {
 
         <div className="hidden lg:block">
           <Button asChild size="lg" className="px-5 shadow-sm">
-            <Link href="/#contato">Fale com um especialista</Link>
+            <Link href="/contato-direto">Fale com um especialista</Link>
           </Button>
         </div>
 
@@ -135,7 +135,7 @@ export function Navbar() {
                 <div className="border-t border-border/70 p-4">
                   <SheetClose asChild>
                     <Link
-                      href="/#contato"
+                      href="/contato-direto"
                       className={cn(
                         buttonVariants({ size: "lg" }),
                         "w-full shadow-sm",

@@ -72,7 +72,7 @@ export function Footer() {
             </p>
             <div className="mt-4">
               <Button asChild size="sm" className="px-5">
-                <Link href="/#contato">Solicitar atendimento</Link>
+                <Link href="/triagem">Solicitar atendimento</Link>
               </Button>
             </div>
           </div>
