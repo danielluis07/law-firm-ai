@@ -10,6 +10,9 @@ import { convertToModelMessages, stepCountIs, streamText } from "ai";
 
 export const maxDuration = 300;
 
+const MAX_CHAT_STEPS = 2;
+const MAX_REPLY_TOKENS = 220;
+
 export async function POST(req: Request) {
   const payload = (await req.json()) as {
     messages?: TriageChatMessage[];
@@ -27,9 +30,12 @@ export async function POST(req: Request) {
 
   const result = streamText({
     model: openai("gpt-5-mini"),
+    maxOutputTokens: MAX_REPLY_TOKENS,
 
     providerOptions: {
       openai: {
+        reasoningEffort: "minimal",
+        parallelToolCalls: true,
         textVerbosity: "low",
       },
     },
@@ -38,7 +44,10 @@ export async function POST(req: Request) {
 
     messages: await convertToModelMessages(payload.messages, { tools }),
 
-    stopWhen: stepCountIs(8),
+    prepareStep: ({ stepNumber }) =>
+      stepNumber > 0 ? { activeTools: [] } : undefined,
+
+    stopWhen: stepCountIs(MAX_CHAT_STEPS),
 
     tools,
   });
